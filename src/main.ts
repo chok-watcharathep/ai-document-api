@@ -39,6 +39,8 @@ async function bootstrap() {
   app.useGlobalFilters(new HttpExceptionFilter());
   // --- End Global Exception Filter ---
 
+  app.enableCors();
+
   // --- Swagger Setup ---
   const config = new DocumentBuilder()
     .setTitle('NestJS Supabase API')
