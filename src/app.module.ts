@@ -7,6 +7,7 @@ import { SupabaseModule } from './common/modules/supabase/supabase.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { ChatModule } from './modules/chat/chat.module';
 import { UserModule } from './modules/user/user.module';
+import { StorageModule } from './modules/storage/storage.module';
 import typeormConfig from './common/config/typeorm.config';
 
 @Module({
@@ -24,6 +25,7 @@ import typeormConfig from './common/config/typeorm.config';
     UserModule,
     SupabaseModule,
     ChatModule,
+    StorageModule,
   ],
   controllers: [AppController],
   providers: [AppService],
